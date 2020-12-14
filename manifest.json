@@ -1,0 +1,27 @@
+{
+  "name": "OurGroceries Add Item",
+  "version": "1.0",
+  "description": "Adds item to shopping list",
+  "permissions": [
+    "declarativeContent",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "add-item": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A"
+      },
+      "description": "Add item to shopping list"
+    }
+  },
+  "manifest_version": 2
+}
